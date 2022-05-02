@@ -10,8 +10,6 @@ router.post("/register", Controller.registerCustomer);
 
 router.post("/login", Controller.loginCustomer);
 
-router.post("/login/authGoogle", Controller.loginGoogle);
-
 router.get("/posts", Controller.CustomerPosts);
 
 router.get("/posts/:postId", Controller.postDetail);

@@ -71,51 +71,6 @@ class Controller {
       next(err);
     }
   }
-
-  static async loginGoogle(req, res, next) {
-    try {
-      const idToken = req.body.idToken;
-      const client = new OAuth2Client(process.env.CLIENT_ID);
-      const ticket = await client.verifyIdToken({
-        idToken,
-        audience: process.env.CLIENT_ID,
-      });
-
-      const payload = ticket.getPayload();
-
-      let user = await User.findOne({
-        where: {
-          email: payload.email,
-        },
-      });
-      let token;
-
-      if (user) {
-        token = createTokenFromPayload({ id: user.id });
-      } else {
-        let createUser = await User.create({
-          username: payload.name,
-          email: payload.email,
-          password: payload.sub,
-          role: "blogger",
-        });
-        token = createTokenFromPayload({ id: createUser.id });
-        user = createUser;
-      }
-
-      res.status(200).json({
-        statusCode: 200,
-        token,
-        data: {
-          username: user.username,
-          email: user.email,
-          role: user.role,
-        },
-      });
-    } catch (err) {
-      next(err);
-    }
-  }
 }
 
 module.exports = Controller;

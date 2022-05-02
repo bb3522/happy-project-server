@@ -13,6 +13,8 @@ const {
 
 router.get("/categories", Controller.categories);
 
+router.post("/sendEmail", Controller.sendEmail);
+
 router.use(authentication);
 
 router.get("/", Controller.posts);

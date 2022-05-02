@@ -6,6 +6,4 @@ const Controller = require("../Controllers/controllerRegister-Login");
 
 router.post("/", Controller.login);
 
-router.post("/authGoogle", Controller.loginGoogle);
-
 module.exports = router;

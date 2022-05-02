@@ -1,5 +1,7 @@
 const { Post, User, Category, History } = require("../models/index");
 
+const nodemailer = require('nodemailer')
+
 class Controller {
   //CREATE
   static async addPost(req, res, next) {
@@ -29,6 +31,44 @@ class Controller {
         data: post,
       });
     } catch (err) {
+      next(err);
+    }
+  }
+
+  static async sendEmail(req, res, next) {
+    try {
+      const { message } = req.body;
+
+      const transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          user: "punyacotton57@gmail.com",
+          pass: "gajah890",
+        },
+      });
+
+      const options = {
+        from: "User",
+        to: "punyacotton57@gmail.com",
+        subject: `BUCKET LIST`,
+        text: message,
+      };
+
+      await transporter.sendMail(options, (err, info) => {
+       if (err) {
+         console.log(err);
+       }
+      });
+
+      res.status(200).json({
+        statusCode: 200,
+        message: `Email has been sent successfully`,
+        data: {
+          message,
+        },
+      });
+    } catch (err) {
+      console.log(err);
       next(err);
     }
   }
