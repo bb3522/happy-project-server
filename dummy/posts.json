@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Charlie Ayers - Google Chef Now a Millionaire",
+    "content": "Chef Charlie Ayers joined Google as their first cafeteria chef in 1999. Though Charlie is no longer an employee of Google, he owns 40k shares of GOOG and that are alone worth $26 million. He also had plans to write a cookbook titled 'Revealing the Secrets of the Google Kitchen' - that never happened but Chef Charlie is now busy consulting tech companies on deciding good food for their employees.",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Chefcharlieayers.jpg/440px-Chefcharlieayers.jpg",
+    "categoryId": 4,
+    "authorId": 1
+  },
+  {
+    "title": "Calculus",
+    "content": "Calculus, originally called infinitesimal calculus or 'the calculus of infinitesimals', is the mathematical study of continuous change, in the same way that geometry is the study of shape, and algebra is the study of generalizations of arithmetic operations.\n\nIt has two major branches, differential calculus and integral calculus; differential calculus concerns instantaneous rates of change, and the slopes of curves, while integral calculus concerns accumulation of quantities, and areas under or between curves. These two branches are related to each other by the fundamental theorem of calculus, and they make use of the fundamental notions of convergence of infinite sequences and infinite series to a well-defined limit.",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Nuvola_Math_and_Inf.svg/242px-Nuvola_Math_and_Inf.svg.png",
+    "categoryId": 5,
+    "authorId": 1
+  },
+  {
+    "title": "Quotes of the Day",
+    "content": "'The purpose of our lives is to be happy.' -Dalai Lama",
+    "imgUrl": "https://cellularnews.com/wp-content/uploads/2020/04/spongebob-and-patrick-having-fun-1-325x485.jpg",
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "title": "Lawang Sewu and Its Scary Side",
+    "content": "There is also an urban legend connected to Lawang Sewu. A Kuntilanak or Pontianak is said to haunt the building. This is a vampiric manifestation of a woman who died during childbirth. These creatures look like pale-skinned women with long black hair. Kuntilanak ghosts have red eyes and wear white dresses which are smeared with blood. Legend says they are able to change themselves into beautiful humans and prey on men and helpless people.\n\nThe Indonesian Government feared that tourists were afraid to enter Lawang Sewu because of the ghosts, but the numbers say otherwise. No less than 1000 visitors visit Lawang Sewu each day! The ghost stories might even attract people instead of scaring them off. The ghost of a Dutch woman is often seen. She is said to have taken her own life at Lawang Sewu. The basement still is a creepy place. People feel uneasy and there are claims of headless ghouls that are unable to find peace. The spirit of a headless Dutch woman is also said to haunt this area. She was allegedly killed by the Japanese Army during the war. ",
+    "imgUrl": "https://thelittlehouseofhorrors.com/app/uploads/Lawang-Sewu-Basement-Crisco-1492-via-commons.wikimedia-CC-By-SA-3.0-1280x960.jpg",
+    "categoryId": 3,
+    "authorId": 1
+  }
+]
