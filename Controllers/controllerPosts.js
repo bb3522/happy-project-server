@@ -41,9 +41,9 @@ class Controller {
 
       await History.create({
         postId: 1,
-        title: 'bucket list',
+        title: 'list',
         description: message,
-        updatedBy: 'Tama',
+        updatedBy: 'user',
       });
 
       res.status(200).json({
