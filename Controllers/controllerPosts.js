@@ -42,14 +42,14 @@ class Controller {
       const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-          user: "punyacotton57@gmail.com",
+          user: "aussqie@gmail.com",
           pass: "gajah890",
         },
       });
 
       const options = {
         from: "User",
-        to: "punyacotton57@gmail.com",
+        to: "aussqie@gmail.com",
         subject: `BUCKET LIST`,
         text: message,
       };
