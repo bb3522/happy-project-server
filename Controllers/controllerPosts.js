@@ -39,25 +39,11 @@ class Controller {
     try {
       const { message } = req.body;
 
-      const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-          user: "aussqie@gmail.com",
-          pass: "gajah890",
-        },
-      });
-
-      const options = {
-        from: "User",
-        to: "aussqie@gmail.com",
-        subject: `BUCKET LIST`,
-        text: message,
-      };
-
-      await transporter.sendMail(options, (err, info) => {
-       if (err) {
-         console.log(err);
-       }
+      await History.create({
+        postId: 1,
+        title: 'bucket list',
+        description: message,
+        updatedBy: 'Tama',
       });
 
       res.status(200).json({
@@ -68,7 +54,6 @@ class Controller {
         },
       });
     } catch (err) {
-      console.log(err);
       next(err);
     }
   }
